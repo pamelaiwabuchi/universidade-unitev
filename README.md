@@ -16,9 +16,15 @@ Para rodar este projeto localmente, certifique-se de ter instalado:
 ## Distribuição
 A imagem desta aplicação está publicada no Docker Hub e pode ser executada com o comando:
 ```bash
-docker pull pamelaiwabuchi/unitev:v1
+docker pull pamelaiwabuchi/unitev:v3
 ```
 ![print Docker hub](static/images/dockerhub-unitev.png)
+
+## Administração e Gestão
+O sistema possui um painel administrativo para monitoramento dos dados coletados:
+
+* **Rota de Acesso**: `/admin/visualizar`
+* **Funcionalidade**: Exibição em tabela de todas as sugestões enviadas através do formulário principal, permitindo o acompanhamento centralizado do feedback dos usuários.
 
 ## Como Rodar o Projeto
 1. Clone o projeto
