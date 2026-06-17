@@ -1,6 +1,42 @@
 # UniTeV - Sistema de Gestão Acadêmica
 O UniTeV é uma plataforma institucional dedicada à excelência tecnológica e ao fortalecimento da transparência acadêmica. O projeto foi desenvolvido com foco em escalabilidade e infraestrutura como código, utilizando Docker para padronização de ambiente e Flask para o processamento de dados.
 
+## Estrutura do Projeto
+```
+├── 📁 static
+│   └── 📁 images
+│       ├── 🖼️ dockerhub-unitev.png
+│       ├── 🖼️ home-horizontal-unitev.png
+│       ├── 🖼️ home-unitev.png
+│       ├── 🖼️ image.png
+│       ├── 🖼️ institucional-unitev.png
+│       ├── 🖼️ logo-unitev.png
+│       ├── 🖼️ logo_sem_fundo_20260316_073613_0000.svg
+│       ├── 🖼️ logonew.svg
+│       ├── 🖼️ mat_abertas_mobile.png
+│       ├── 🖼️ matricula.cel.png
+│       ├── 🖼️ matricula_site.png
+│       ├── 🖼️ matriculas-abertas-unitev.png
+│       └── 🖼️ oficialinstitucional.png
+├── 📁 templates
+│   ├── 🌐 admin.html
+│   ├── 🌐 contato.html
+│   ├── 🌐 index.html
+│   └── 🌐 quemsomos.html
+├── ⚙️ .env.example
+├── ⚙️ .gitignore
+├── 🖼️ 2logo_sem_fundo_20260318_080823_0000.svg
+├── 🐳 Dockerfile
+├── 📝 README.md
+├── 🐍 app.py
+├── ⚙️ docker-compose.yml
+├── 📝 guia-do-usuario.md
+├── 📄 init.sql
+└── 📄 requirements.txt
+```
+
+---
+
 ## Tecnologias Utilizadas
 - Backend: Python, Flask
 - Banco de Dados: MySQL
