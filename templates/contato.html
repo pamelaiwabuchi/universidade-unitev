@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contato - UniTeV</title>
+    
+
+</head>
+<body class="min-h-screen flex flex-col">
+    <header >
+        <h1 id="h1-home" class="text-center pt-4 font-bold bg-sky-950 text-sky-100 text-sm md:text-base">
+            UniTeV - Excelência Tecnológica em São José dos Campos
+        </h1>
+        <nav class="flex flex-col md:flex-row items-center justify-between px-8 md:px-28 bg-sky-950 text-sky-100 py-10 md:py-6 gap-y-8">       
+            <div>
+            <img  class="h-16 md:h-20 w-auto " src="/static/images/2logo_sem_fundo_20260318_080823_0000.svg" alt="Logo UniTeV" width="150">
+            </div>
+            <div id="barra-nav" class="flex gap-x-18 md:gap-x-14 text-sm md:text-base text-sky-50 font-bold">
+            <a href="/">Home</a>
+            <a href="/quemsomos">Quem Somos</a>
+            <a href="/contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-1 ">
+        <section class="px-20 py-6" id="contato-section">
+        <h1 class="py-10 font-bold">Entre em contato</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquam nesciunt at sed enim officiis dicta, voluptatum ullam animi reiciendis commodi illo, odit magni doloremque? Mollitia modi illum fugit blanditiis.</p>
+        </section>
+        <form class="pb-2 bg-sky-800 text-sky-100 w-full max-w-lg mx-auto rounded-none md:rounded-lg" method="POST" action="/contato">
+            <fieldset class="py-10 px-10">
+                <legend class="pt-10"><strong>Informações</strong></legend>
+                <div class="flex flex-col gap-y-1 py-2">
+                <label for="nome" >Nome:</label>
+                <input class="bg-sky-50 rounded-lg py-2 border-sky-300 text-gray-900" type="text" id="nome" name="nome" required>
+                </div>
+                <div class="flex flex-col gap-y-1 py-2">
+                <label for="email" >Email:</label>
+                <input class="bg-sky-50 rounded-lg py-2 border-sky-300 text-gray-900" type="email" id="email" name="email" required>
+                </div>
+                <div class="flex flex-col gap-y-1 py-2">
+                <label for="sugestao" >Deixe sua sugestão:</label>
+                <input class="bg-sky-50 rounded-lg py-2 border-sky-300 text-gray-900" type="sugestao" id="sugestao" name="sugestao">
+                </div>
+            </fieldset>    
+                <button class="flex mx-auto mb-10 rounded-lg bg-white text-sky-800 px-6 py-2 font-bold" type="submit">Enviar</button>
+            
+        </form>
+        </main>
+    <footer class="px-20 text-center font-bold bg-sky-950 text-sky-50 py-8">
+        <p>Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
