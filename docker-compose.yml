@@ -4,16 +4,19 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DB_HOST=db
-      - DB_USER=${DB_USER}
-      - DB_PASS=${DB_PASS}
+      # Se não encontrar variável, assume o valor local do container 'db'
+      MYSQLHOST: ${MYSQLHOST:-db}
+      MYSQLPORT: ${MYSQLPORT:-3306}
+      MYSQLUSER: ${MYSQLUSER:-root}
+      MYSQLPASSWORD: ${MYSQLPASSWORD:-sua_senha_aqui}
+      MYSQLDATABASE: ${MYSQLDATABASE:-universidade_unitev}
     depends_on:
       - db
 
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: ${DB_PASS}
-      MYSQL_DATABASE: universidade_unitev
+      MYSQL_ROOT_PASSWORD: ${MYSQLPASSWORD:-sua_senha_aqui}
+      MYSQL_DATABASE: ${MYSQLDATABASE:-universidade_unitev}
     ports:
       - "3306:3306"
