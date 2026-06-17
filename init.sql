@@ -1,4 +1,7 @@
+CREATE DATABASE if not exists universidade_unitev;
+
 USE universidade_unitev;
+
     CREATE TABLE unitev (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,

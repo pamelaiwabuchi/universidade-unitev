@@ -45,7 +45,7 @@ def quemsomos():
 @app.route("/admin/visualizar")
 def visualizar_sugestoes():
     conn = get_db_connection()
-    cursor = conn.cursor(dictionary=True) # Retorna como dicionário para facilitar
+    cursor = conn.cursor(dictionary=True)
     cursor.execute("SELECT * FROM unitev")
     dados = cursor.fetchall()
     cursor.close()
