@@ -52,7 +52,7 @@ Para rodar este projeto localmente, certifique-se de ter instalado:
 ## Distribuição
 A imagem desta aplicação está publicada no Docker Hub e pode ser executada com o comando:
 ```bash
-docker pull pamelaiwabuchi/unitev:v3
+docker run -d -p 5000:5000 pamelaiwabuchi/unitev:v4
 ```
 ![print Docker hub](static/images/dockerhub-unitev.png)
 
