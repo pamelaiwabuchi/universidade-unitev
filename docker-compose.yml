@@ -1,5 +1,6 @@
 services:
   web:
+    image: pamelaiwabuchi/unitev:v4
     build: .
     ports:
       - "5000:5000"
