@@ -42,5 +42,15 @@ def contato():
 def quemsomos():
     return render_template("quemsomos.html")
 
+@app.route("/admin/visualizar")
+def visualizar_sugestoes():
+    conn = get_db_connection()
+    cursor = conn.cursor(dictionary=True) # Retorna como dicionário para facilitar
+    cursor.execute("SELECT * FROM unitev")
+    dados = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return render_template("admin.html", sugestoes=dados)
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
